@@ -12,7 +12,7 @@ then
 	git clone https://github.com/binocarlos/socketjack.git socketjack
 	cd socketjack
 	npm install
-	node index.js
+	sudo node index.js
 
 This will run the very basic server - then you can goto localhost (or if you are live then IP)
 and it should boot up.
