@@ -1,0 +1,16 @@
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  var socket = io.connect();
+
+  socket.on('move:response', function (packet) {
+  	console.log('-------------------------------------------');
+  	console.log('reponse');
+  	console.dir(packet);
+  })
+
+  socket.emit('move:request', {
+  	id:432,
+  	title:'boo'
+  })
+
+</script>
